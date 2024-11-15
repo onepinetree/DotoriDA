@@ -1,5 +1,6 @@
-openai
-fastapi
-pydantic
-uvicorn
-starlette
+firebase-admin
+pandas
+numpy
+matplotlib
+seaborn
+streamlit
