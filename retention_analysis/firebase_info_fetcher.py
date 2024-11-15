@@ -9,7 +9,8 @@ def sort_dates(date_list):
 
 
 if not firebase_admin._apps:
-    cred = credentials.Certificate("retention_analysis/dotori-fd1b0-firebase-adminsdk-zzxxd-fb0e07e05e.json")
+    # cred = credentials.Certificate("retention_analysis/dotori-fd1b0-firebase-adminsdk-zzxxd-fb0e07e05e.json")
+    cred = credentials.Certificate('/etc/secrets/dotori-fd1b0-firebase-adminsdk-zzxxd-fb0e07e05e.json')
     firebase_admin.initialize_app(cred)
 
 db = firestore.client()
